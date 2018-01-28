@@ -1,0 +1,297 @@
+/*
+	COLORS
+	1. red = #FB544D
+*/
+
+
+body{
+	font:15px/1.5 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	background: #f4f4f4;
+}
+
+/*Global*/
+
+.container{
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.row{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 90rem;
+}
+
+
+.title{
+	font-family: 'Bungee', cursive;
+	font-size: 2.5em;
+	text-align: center;
+}
+
+.button{
+    background: transparent;
+    padding: 15px 30px;
+    border: 4px double #FB544D;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 20px;
+    outline: none;
+	font-family: 'Roboto', sans-serif;
+}
+
+.button:hover{
+	cursor: pointer;
+}
+
+
+/*Banner*/
+#banner{
+	min-height: 100vh;
+	background: url(../images/landing.jpg)no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+	font-family: 'Bungee', cursive;
+}
+
+#banner .transparent{
+    background: rgba(0, 0, 0, 0.67);
+    height: 100vh;
+}
+
+#banner .banner-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#banner h1{
+	font-size: 3em;
+    margin-bottom: 68px;
+}
+
+#banner h2{
+	font-size: 2em;
+	margin-top: 0;
+}
+
+#banner .typer-wrapper{
+   	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 20px;
+}
+
+/*About*/
+
+#about{
+	min-height: 400px;
+	padding: 0 40px;
+}
+
+#about .about-box{
+    float: left;
+    width: 22%;
+    padding: 12px;
+    text-align: center;
+}
+
+#about .about-box img{
+    width: 182px;
+    height: 120px;
+    border-radius: 19px;
+}
+
+#about .about-box h1{
+    font-family: 'Bungee', cursive;
+    font-size: 18px;
+}
+
+/*Skill*/
+
+#skill{
+    background: url(../images/table.jpeg)no-repeat center center;
+    background-size: cover;
+    min-height: 480px;
+    color: #fff;
+}
+
+#skill .transparent{
+    background: rgba(0, 0, 0, 0.67);
+    height: 480px;
+}
+
+
+#skill .skill-box{
+ 	background: #ffffff9c;
+    color: #000;
+    margin: 10px;
+    width: 15%;
+    float: left;
+    height: 140px;
+    text-align: center;
+    position: relative;
+}
+
+#skill .skill-box-wrapper{
+ 	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#skill .skill-box img{
+    width: 73px;
+}
+
+#skill .skill-box h5{
+   	margin: 0;
+    padding-top: 6px;
+}
+
+
+/*Project*/
+
+#project{
+	min-height: 72vh;
+}
+
+.project1{
+	background: #2ecc71;
+}
+
+.project2{
+	background: #e74c3c;
+}
+
+.project3{
+	background: #3498db;
+}
+
+.project4{
+    background: #d45c25;
+}
+
+.project5{
+    background: #ffd500;
+}
+
+.project6{
+    background: #d00f6f;
+}	
+
+#project .project-box .company{
+	padding-left: 10px;
+	font-size: 15px;
+}
+
+#project .project-box{
+   	width: 33.33%;
+    float: left;
+    height: 270px;
+    text-align: left;
+    position: relative;
+    color: #fff;
+    font-size: 8px;
+}
+
+#project .project-box img {
+	height: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+
+
+footer{
+    background: #3f4142;
+    text-align: center;
+    color: #fff;
+    padding: 1px;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+}
+
+
+
+@media only screen and (max-width: 64em) and (min-width: 40.063em){
+	
+
+	.row{
+		max-width: 42rem;
+	}
+
+	#about .about-box {
+		width: 45%;
+	}
+
+	#skill .skill-box{
+		width: 47%;
+	}
+
+	#skill .transparent{
+	    height: 100%;
+    	padding: 0 0 20px 0;
+	}
+
+	#project .project-box {
+   	 	width: 50%;
+   	}
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+	
+	#about{
+		padding: 0 20px;
+	}
+
+	#about .about-box {
+	    width: 20%;
+	    padding: 0 24px;
+	    font-size: 12px;
+	}
+
+	#about .about-box h1{
+	    font-size: 16px;
+	}
+
+	#skill .skill-box {
+	    width: 14%;
+	}
+
+	#skill .skill-box img {
+	    width: 56px;
+	}
+
+	.row{
+		max-width: 62rem;
+	}
+}
