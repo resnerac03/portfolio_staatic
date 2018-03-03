@@ -6,3 +6,5 @@ $(document).ready(function(){
 	},{offset:'70%'});
 
 })
+
+$('body').toggleClass('loaded');
